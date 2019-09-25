@@ -1,12 +1,13 @@
 $(document).ready(() => {
   $('.slick--autoplay').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
+      // slidesToShow: 3,
+      // slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 2000,
       prevArrow: '',
       nextArrow: '',
       draggable: true,
+      mobileFirst: true,
       responsive: [
         {
           breakpoint: 1024,
@@ -14,6 +15,7 @@ $(document).ready(() => {
             slidesToShow: 3,
             slidesToScroll: 3,
             centerMode: true,
+            centerPadding: '40px'
           }
         },
         {
@@ -22,6 +24,7 @@ $(document).ready(() => {
             slidesToShow: 2,
             slidesToScroll: 2,
             centerMode: true,
+            centerPadding: '40px'
           }
         },
         {
@@ -30,13 +33,16 @@ $(document).ready(() => {
             slidesToShow: 1,
             slidesToScroll: 1,
             centerMode: true,
+            centerPadding: '40px'
           }
         },
         {
-          breakpoint: 360,
+          breakpoint: 260,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            centerMode: true,
+            centerPadding: '40px'
           }
         }       
       ]
