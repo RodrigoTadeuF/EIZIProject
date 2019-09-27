@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Exo|Teko&display=swap');
+
 * {
     scroll-behavior: smooth;
 }
@@ -5,6 +7,17 @@
 body {
     background: #abbaab;
     background: linear-gradient(to right, #ffffff, #abbaab); 
+    font-family: 'Exo', sans-serif;
+}
+
+.navbar-brand {
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+}
+
+.navbar-nav {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5em;
 }
 
 .svg-highlight:hover {
