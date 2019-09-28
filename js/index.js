@@ -67,3 +67,43 @@ function tirarHifen(telefone){
 
   telefone.value = textoAjustado;
 }
+
+let botao = document.getElementById('btnClean'); 
+
+botao.addEventListener("click", function(){
+
+  event.preventDefault(); 
+ 
+  document.getElementById('nome-form').value = '' ; 
+  document.getElementById('sobrenome-form').value = '' ; 
+  document.getElementById('telefone-form').value = '' ; 
+  document.getElementById('email-form').value = '' ; 
+  document.getElementById('endereco-form').value = '' ; 
+  document.getElementById('mensagem-duvidas').value = '' ; 
+  
+
+
+}); 
+
+
+let botaoEnviar = document.getElementById('button-send'); 
+
+botaoEnviar.addEventListener('click', function(){
+  let nome =  document.getElementById('nome-form').value; 
+  let sobrenome =  document.getElementById('sobrenome-form').value; 
+  let email =  document.getElementById('email-form').value; 
+  let telefone =  document.getElementById('telefone-form').value; 
+  let endereco =  document.getElementById('endereco-form').value; 
+  let duvidas =  document.getElementById('mensagem-duvidas').value; 
+  
+  if(nome == '' || sobrenome =='' || email == '' || telefone == '' || endereco == '' || duvidas == '' ){
+    alert("Favor preencher os campos"); 
+  }
+
+}); 
+
+function validarCampos (){
+ 
+
+
+}

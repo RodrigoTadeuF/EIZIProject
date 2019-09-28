@@ -56,7 +56,7 @@
           </div>
 
         <div class="container-fluid py-5" id="eizi-bot">
-          <h2>EIZI BOT</h2>
+          <h2 class="font-weight-bold">EIZI BOT</h2>
           <p>EIZI BOT é o projeto dos alunos Gustavo, Mateus, Otávio, Rodrigo e Victor com o intuito de destruir e massacrar
              todos os outros robôs adversários da competição. O nome EIZI vem do termo inglês easy, de "fácil". Suas cores são
              focadas no branco e púrpura, que representam as cores da realeza, mostrando o poder e status do robô. Seu formato
@@ -66,7 +66,7 @@
         </div>
 
         <div class="container-fluid" id="next">
-        <h2>Next</h2>
+        <h2 class="font-weight-bold">Next</h2>
         <div class="row">
           <div class="col-12 col-md-6">
             <v> O Next é um evento oferecido pela faculdade FIAP para seus alunos, onde estes conseguem expor os projetos que desenvolveram durante o ano,
@@ -120,19 +120,19 @@
         </div>
 
         <div class="container-fluid" id="faca-robo">
-            <h2>Faça seu robo</h2>
+            <h2 class="font-weight-bold">Faça seu robo</h2>
             <p>Mesmo se demonstrando intimidador, para se fazer um robô de combate e destruição pode ser complexo, porém ao mesmo tempo muito simples.
                Como demonstrado na nossa pequena atividade abaixo você pode ver como simples e divertido pode ser montar um robô de combate.
             </p>
         </div>
 
         <div class="container-fluid my-4" id="quem-somos">
-          <h2 class="my-4 py-5">Quem Somos</h2>
-          <div class="row">
+          <h2 class="my-4 py-5 font-weight-bold">Quem Somos</h2>
+          <div class="row alignment-flip ">
 
-            <div class="flip-card">
+            <div class="flip-card ">
               <div class="flip-card-inner">
-                <div class="flip-card-front">
+                <div class="flip-card-front ">
                   <h3>Gustavo Tiago</h3>
                   <p>Back-End Developer</p>
                   <p>Robot Maker</p>
@@ -195,7 +195,7 @@
         </div>
 
         <div class="my-5 container-fluid" id="fale-conosco">
-          <h2>Fale Conosco</h2>
+          <h2 class="font-weight-bold">Fale Conosco</h2>
           <div class="row">
             <div class="col-12 col-md-6">
                 <iframe class= "col-12"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58510.20609321794!2d-46.648546922924254!3d-23.57246994468698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce597abf1a28ff%3A0x1b02a58f85e6395e!2sFIAP!5e0!3m2!1spt-BR!2sbr!4v1568411655869!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
@@ -208,22 +208,22 @@
               <form>
                 <div class="form-row">
                   <div class="col">
-                     <input type="text" class="form-control" placeholder="Nome">
+                     <input type="text" id="nome-form"class="form-control" placeholder="Nome">
                   </div>
                   <div class="col">
-                     <input type="text" class="form-control" placeholder="Sobrenome">
+                     <input type="text" id="sobrenome-form"class="form-control" placeholder="Sobrenome">
                   </div>
                 </div>
                 <div class="form-row mt-3">
                   <div class="col">
-                      <input onblur="mascaraDeTelefone(this);" onfocus="tirarHifen(this);" type="text" class="form-control" placeholder="Telefone"> 
+                      <input onblur="mascaraDeTelefone(this);" id="telefone-form"onfocus="tirarHifen(this);" type="text" class="form-control" placeholder="Telefone"> 
                   </div>
                   <div class="col">
-                      <input type="text" class="form-control" placeholder="Email">
+                      <input type="text" id='email-form'class="form-control" placeholder="Email">
                   </div>
                 </div>  
                 <div class="mt-3 mb-3 form-group">
-                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Endereço">
+                  <input type="text" class="form-control" id='endereco-form'id="formGroupExampleInput" placeholder="Endereço">
                 </div>
 
                 <div class="mt-3 mb-3 form-group">
@@ -232,8 +232,8 @@
                 </div>
 
               </form>
-              <button type="button" class="btn btn-primary">Enviar</button>
-              <button type="button" class="btn btn-secondary">Limpar</button>
+              <button type="button" id='button-send'class="btn btn-primary">Enviar</button>
+              <button type="button" id="btnClean" class="btn btn-secondary">Limpar</button>
 
             </div>
           </div>
