@@ -22,13 +22,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.esquerda {
 
-}
-
-.direita {
-    background-image: url(images/baseRobo.png)
-}
 .navbar-brand {
     font-family: 'Teko', sans-serif;
     font-size: 2em;
