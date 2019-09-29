@@ -17,18 +17,11 @@ body {
 
 .direita {
     height: 100vh;
-    width: 40%;
-    background-image: url('images/baseRobo.png');
+    width: 60%;
+    background-image: url(/images/baseRobo.png);
     background-repeat: no-repeat;
 }
 
-.esquerda {
-
-}
-
-.direita {
-    background-image: url(images/baseRobo.png)
-}
 .navbar-brand {
     font-family: 'Teko', sans-serif;
     font-size: 2em;
