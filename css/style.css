@@ -83,3 +83,25 @@ body {
     box-sizing: border-box;
     padding-left: 30px;
 }
+
+.button-footer {
+    width: 2em;
+    height: 1.5em;
+    margin: 10px;
+    border: 1px solid gold ;
+    padding: 8px;
+    font-size: 30px;
+    color: gold;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.button-footer a {
+    text-decoration: none;
+}
+
+.button-footer :hover {
+    background-color: gold;
+}
+

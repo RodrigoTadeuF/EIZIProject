@@ -143,7 +143,7 @@ dropzones.forEach(dropzone => {
 	dropzone.ondrop = function(e) {
 		const id = e.dataTransfer.getData('item-id')
 		const item = document.getElementById(id)
-		// e.target.appendChild(item)
-		dropzone.appendChild(item)
+		e.target.appendChild(item)
+		// dropzone.appendChild(item)
 	}
 })
