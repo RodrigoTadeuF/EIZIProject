@@ -4,7 +4,8 @@ $('.slider-for').slick({
   slidesToScroll: 1,
   arrows: false,
   fade: true,
-  asNavFor: '.slider-nav'
+  asNavFor: '.slider-nav',
+  centerMode: true,
   });
 });
 
@@ -13,10 +14,10 @@ $('.slider-nav').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   asNavFor: '.slider-for',
-  dots: true,
-  focusOnSelect: true,
   prevArrow: '',
   nextArrow: '',
+  focusOnSelect: true,
+  variableWidth: true,
   });
 });
 
@@ -126,6 +127,23 @@ botaoEnviar.addEventListener('click', function(){
 
 function validarCampos (){
  
-
-
 }
+
+const items = document.querySelectorAll('[wm-dropzone] .item')
+items.forEach((item, index) => {
+  item.draggable = true  
+  item.id = item.id || `draggable-item-${index}`
+  item.ondragstart = e =>
+  e.dataTransfer.setData('item-id', e.target.id)
+})
+
+const dropzones = document.querySelectorAll('[wm-dropzone]')
+dropzones.forEach(dropzone => {
+	dropzone.ondragover = e => e.preventDefault()
+	dropzone.ondrop = function(e) {
+		const id = e.dataTransfer.getData('item-id')
+		const item = document.getElementById(id)
+		// e.target.appendChild(item)
+		dropzone.appendChild(item)
+	}
+})

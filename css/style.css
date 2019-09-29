@@ -7,13 +7,28 @@
 body {
     background: #abbaab;
     background: linear-gradient(to right, #ffffff, #abbaab); 
-
-   
-    
     font-family: 'Exo', sans-serif;
 }
 
+.esquerda {
+    height: 100vh;
+    width: 40%;
+}
 
+.direita {
+    height: 100vh;
+    width: 40%;
+    background-image: url('images/baseRobo.png');
+    background-repeat: no-repeat;
+}
+
+.esquerda {
+
+}
+
+.direita {
+    background-image: url(images/baseRobo.png)
+}
 .navbar-brand {
     font-family: 'Teko', sans-serif;
     font-size: 2em;
