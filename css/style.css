@@ -36,6 +36,7 @@ body {
     opacity: 0.6;
 }
 
+
 .flip-card {
     background-color: transparent;
     width: 15rem;
@@ -85,13 +86,13 @@ body {
 }
 
 .button-footer {
-    width: 2em;
-    height: 1.5em;
+    width: 60px;
+    height: 80px;
     margin: 10px;
-    border: 1px solid gold ;
+    /* border: 1px solid gold ; */
     padding: 8px;
     font-size: 30px;
-    color: gold;
+    /* color: gold; */
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -102,6 +103,48 @@ body {
 }
 
 .button-footer :hover {
-    background-color: gold;
+    /* background-color: gold; */
 }
 
+.button1{
+  /* background-color: #4CAF50; */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.button-footer-configuration{
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+.align-svg{
+   float: right;
+}
+
+.container-rede{
+    float: right;
+   
+}
+.margem-eizi{
+    
+    margin-bottom: -100px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.direitos{
+    display: flex; 
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+.align-button {
+    margin-bottom: 20px;
+}
